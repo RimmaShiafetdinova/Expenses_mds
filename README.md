@@ -5,27 +5,35 @@ ML-сервис на **Streamlit** с эндпоинтами на **FastAPI** и
 ## Структура
 
 ```
-.
+```text
+pages/
 ├── backend/
-│   ├── api.py          # приложение FastAPI и эндпоинты
-│   ├── database.py     # подключение к SQLite
-│   ├── models.py       # таблица transactions (SQLAlchemy)
-│   ├── schemas.py      # схемы данных (Pydantic)
-│   ├── crud.py         # операции с базой
+│   ├── api.py              # приложение FastAPI и эндпоинты
+│   ├── database.py         # подключение к SQLite
+│   ├── models.py           # модели SQLAlchemy
+│   ├── schemas.py          # схемы данных Pydantic
+│   ├── crud.py             # операции с базой данных
 │   └── ml/
-│       └── forecast.py # прогноз расходов (линейная регрессия)
+│       └── forecast.py     # прогноз расходов (линейная регрессия)
+│
 ├── frontend/
-│   ├── Main.py         # дашборд
-│   ├── common.py       # общий HTTP-клиент к API
+│   ├── Main.py             # главная страница Streamlit
+│   ├── common.py           # HTTP-клиент для API
 │   └── pages/
-│       ├── 2_Add.py            # добавить операцию
-│       ├── 3_Transactions.py   # все операции
-│       └── 4_Forecast.py       # прогноз (ML)
+│       ├── 2_Add.py        # добавление операции
+│       ├── 3_Transactions.py
+│       └── 4_Forecast.py
+│
 ├── utils/
-│   └── init_db.py      # создание таблиц в data/expenses.db
-├── data/               # здесь лежит база expenses.db
-├── seed_data.py        # наполнение базы тестовыми данными
-└── requirements.txt
+│   └── init_db.py          # создание таблиц
+│
+├── data/
+│   ├── expenses.db
+│
+├── seed_data.py            # заполнение тестовыми данными
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
 
 ## Запуск (из папки проекта)
