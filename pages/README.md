@@ -14,14 +14,14 @@ ML-сервис на **Streamlit** с эндпоинтами на **FastAPI** и
 │   ├── crud.py         # операции с базой
 │   └── ml/
 │       └── forecast.py # прогноз расходов (линейная регрессия)
-├── frontend/
+├── frontend /
 │   ├── Main.py         # дашборд
 │   ├── common.py       # общий HTTP-клиент к API
 │   └── pages/
 │       ├── 2_Add.py            # добавить операцию
 │       ├── 3_Transactions.py   # все операции
 │       └── 4_Forecast.py       # прогноз (ML)
-├── utils/
+├── utils /
 │   └── init_db.py      # создание таблиц в data/expenses.db
 ├── data/               # здесь лежит база expenses.db
 ├── seed_data.py        # наполнение базы тестовыми данными
