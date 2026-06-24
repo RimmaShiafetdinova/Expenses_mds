@@ -4,7 +4,6 @@ ML-сервис на **Streamlit** с эндпоинтами на **FastAPI** и
 
 ## Структура
 
-```
 ```text
 pages/
 ├── backend/
@@ -20,7 +19,7 @@ pages/
 │   ├── Main.py             # главная страница Streamlit
 │   ├── common.py           # HTTP-клиент для API
 │   └── pages/
-│       ├── 2_Add.py        # добавление операции
+│       ├── 2_Data.py       # добавление операции
 │       ├── 3_Transactions.py
 │       └── 4_Forecast.py
 │
